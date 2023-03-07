@@ -150,6 +150,7 @@ p {
 @media(min-width: 540px){
     .card-grid{
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
     }
 }
 
@@ -189,7 +190,11 @@ p {
 }
 
 .card:hover .card__background{
-    transform: scale(1.05) translateZ(1);
+    transform: scale(1.05) translateZ(0);
+}
+.card:hover {
+    z-index: 1;
+    box-shadow: #1a1a1a40 15px 20px 14px 9px;
 }
 
 .card-grid:hover > .card:hover .card__background{
